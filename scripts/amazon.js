@@ -1,6 +1,5 @@
 import { cart } from '../data/cart-class.js';
 import { products, loadProducts } from '../data/products.js';
-// import { convMoney } from './utils/money.js';
 
 loadProducts().then(() => {
   renderProductsGrid();
