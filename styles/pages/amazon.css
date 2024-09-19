@@ -47,6 +47,12 @@
   }
 }
 
+@media (max-width: 390px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .product-container {
   padding-top: 40px;
   padding-bottom: 25px;
