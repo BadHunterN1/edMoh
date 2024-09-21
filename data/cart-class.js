@@ -18,7 +18,11 @@ export class Cart {
     savetostorage() {
         localStorage.setItem(this.#localStorageName, JSON.stringify(this.cartItems));
     }
-
+    
+    clearstorage() {
+        localStorage.removeItem(this.#localStorageName);
+    }
+    
     addToCart(productId, quantity) {
         quantity = quantity;
         
@@ -108,6 +112,12 @@ export class Cart {
 
 export const cart = new Cart('cart-oop');
 const businessCart = new Cart('cart-business');
+
+export function resetStorage() {
+    cart.cartItems = [];
+    cart.clearstorage();
+    cart.updateCartQuantity();
+};
 
 console.log(cart);
 console.log(businessCart);
