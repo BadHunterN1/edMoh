@@ -6,7 +6,8 @@ import { getProduct, loadProducts } from "../data/products.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 async function renderOrder() {
-    await loadProducts()
+    await loadProducts();
+    resetStorage();
     let ordersHTML = '';
     
     await orders.forEach((order) => {
