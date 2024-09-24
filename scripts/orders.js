@@ -1,6 +1,6 @@
 import { orders, saveToStorage } from "../data/orders.js";
 import { convMoney } from "./utils/money.js";
-import { cart } from "../data/cart-class.js";
+import { cart, resetStorage } from "../data/cart-class.js";
 import { searchBarCon } from "./amazon.js";
 import { getProduct, loadProducts } from "../data/products.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
